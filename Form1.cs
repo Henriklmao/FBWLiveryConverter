@@ -28,14 +28,26 @@ namespace LiveryConverter
 
         private void button2_Click(object sender, EventArgs e)
         {
-            CommonOpenFileDialog dialog = new CommonOpenFileDialog();
-            dialog.IsFolderPicker = true;
-            if (dialog.ShowDialog() == CommonFileDialogResult.Ok)
-            {
-                textBox1.Text = dialog.FileName;
-            }
-        }
+            var picker = new Windows.Storage.Pickers.FileOpenPicker();
+            picker.ViewMode = Windows.Storage.Pickers.PickerViewMode.Thumbnail;
+            picker.SuggestedStartLocation = Windows.Storage.Pickers.PickerLocationId.PicturesLibrary;
+            picker.FileTypeFilter.Add("folder");
 
+            Windows.Storage.StorageFile file = await picker.PickSingleFileAsync();
+            if (file != null)
+            {
+                // Application now has read/write access to the picked file
+                this.textBlock.Text = "Picked folder: " + file.Name;
+            }
+            else
+            {
+                this.textBlock.Text = "Operation cancelled.";
+            }
+            string lvrdir = (file);
+            MessageBox.Show(lvrdir, "Exception: Livery file missing",
+                       MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
+        }
         private void button1_Click(object sender, EventArgs e)
         {
             Worker.Conversion();
