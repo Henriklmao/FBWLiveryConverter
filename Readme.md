@@ -5,7 +5,7 @@
 One of the latest FBW updates made the A32nx independent from the default A320, thus every livery does no longer work with the A32nx. Many members out of the community are upset as they want to fly for their favourite airlines again thus we $([Henrik](https://github.com/henriklmao "My GitHub") and [Skyline](https://github.com/wunderkekshd "His GitHub")$) decided to write this conversion tool.
 
 ## Documentation and how to Install/Use
-[read the Docs, the'll help you with everything](.github/Docs.md "Visit FlyByWire's Github")
+[read the Docs, the'll help you with everything](https://github.com/Henriklmao/FBWLiveryConverter/blob/main/DOCS/Docs.md "Visit FlyByWire's Github")
 
 ## Requirements
 
