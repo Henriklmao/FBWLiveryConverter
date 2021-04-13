@@ -32,3 +32,10 @@
 *.app
 .vs/LiveryConverter/v16/.suo
 *.cache
+*.cache
+obj/Debug/LiveryConverter.csprojAssemblyReference.cache
+obj/Debug/LiveryConverter.csproj.GenerateResource.cache
+obj/Debug/LiveryConverter.csproj.FileListAbsolute.txt
+obj/Debug/LiveryConverter.csproj.CoreCompileInputs.cache
+obj/Debug/DesignTimeResolveAssemblyReferences.cache
+.vs/LiveryConverter/v16/.suo

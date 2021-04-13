@@ -13,3 +13,9 @@ C:\Users\onere\source\repos\Henriklmao\FBWLiveryConverter\obj\Debug\LiveryConver
 C:\Users\onere\source\repos\Henriklmao\FBWLiveryConverter\obj\Debug\LiveryConverter.csproj.CopyComplete
 C:\Users\onere\source\repos\Henriklmao\FBWLiveryConverter\obj\Debug\LiveryConverter.exe
 C:\Users\onere\source\repos\Henriklmao\FBWLiveryConverter\obj\Debug\LiveryConverter.pdb
+A:\Programmieren\FBWLiveryConverter\obj\Debug\LiveryConverter.csprojAssemblyReference.cache
+A:\Programmieren\FBWLiveryConverter\obj\Debug\LiveryConverter.Form1.resources
+A:\Programmieren\FBWLiveryConverter\obj\Debug\LiveryConverter.Properties.Resources.resources
+A:\Programmieren\FBWLiveryConverter\obj\Debug\LiveryConverter.csproj.GenerateResource.cache
+A:\Programmieren\FBWLiveryConverter\obj\Debug\LiveryConverter.csproj.CoreCompileInputs.cache
+A:\Programmieren\FBWLiveryConverter\obj\Debug\LiveryConverter.pdb
