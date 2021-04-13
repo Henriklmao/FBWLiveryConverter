@@ -1,0 +1,15 @@
+C:\Users\onere\source\repos\Henriklmao\FBWLiveryConverter\bin\Debug\LiveryConverter.exe.config
+C:\Users\onere\source\repos\Henriklmao\FBWLiveryConverter\bin\Debug\LiveryConverter.exe
+C:\Users\onere\source\repos\Henriklmao\FBWLiveryConverter\bin\Debug\LiveryConverter.pdb
+C:\Users\onere\source\repos\Henriklmao\FBWLiveryConverter\bin\Debug\Microsoft.WindowsAPICodePack.dll
+C:\Users\onere\source\repos\Henriklmao\FBWLiveryConverter\bin\Debug\Microsoft.WindowsAPICodePack.Shell.dll
+C:\Users\onere\source\repos\Henriklmao\FBWLiveryConverter\bin\Debug\Microsoft.WindowsAPICodePack.xml
+C:\Users\onere\source\repos\Henriklmao\FBWLiveryConverter\bin\Debug\Microsoft.WindowsAPICodePack.Shell.xml
+C:\Users\onere\source\repos\Henriklmao\FBWLiveryConverter\obj\Debug\LiveryConverter.csprojAssemblyReference.cache
+C:\Users\onere\source\repos\Henriklmao\FBWLiveryConverter\obj\Debug\LiveryConverter.Form1.resources
+C:\Users\onere\source\repos\Henriklmao\FBWLiveryConverter\obj\Debug\LiveryConverter.Properties.Resources.resources
+C:\Users\onere\source\repos\Henriklmao\FBWLiveryConverter\obj\Debug\LiveryConverter.csproj.GenerateResource.cache
+C:\Users\onere\source\repos\Henriklmao\FBWLiveryConverter\obj\Debug\LiveryConverter.csproj.CoreCompileInputs.cache
+C:\Users\onere\source\repos\Henriklmao\FBWLiveryConverter\obj\Debug\LiveryConverter.csproj.CopyComplete
+C:\Users\onere\source\repos\Henriklmao\FBWLiveryConverter\obj\Debug\LiveryConverter.exe
+C:\Users\onere\source\repos\Henriklmao\FBWLiveryConverter\obj\Debug\LiveryConverter.pdb
