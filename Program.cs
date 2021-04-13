@@ -16,7 +16,18 @@ namespace LiveryConverter
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new Form());
         }
     }
 }
+
+
+
+/* Notes
+
+for Replacing strings:
+
+string text = File.ReadAllText("input file");
+text = text.Replace("what to replace", "with replace");
+File.WriteAllText("output file", text);
+*/
