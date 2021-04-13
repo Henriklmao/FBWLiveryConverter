@@ -19,13 +19,17 @@ namespace LiveryConverter
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
         }
+
+        internal static void Conversion()
+        {
+            throw new NotImplementedException();
+        }
     }
 
     static class Worker
     {
-        private static void Isliveryvalid()
+        public static void Conversion()
         {
-            string lvrdir = "test"; /// Just for testing
             if (File.Exists(lvrdir + "/manifest.json"))
             {
 
@@ -59,21 +63,41 @@ namespace LiveryConverter
                     /// Backup model.cfg
                     System.IO.File.Move("/SimObjects/Airplanes/*/model.main/model.cfg", "/SimObjects/Airplanes/*/model.main/model.cfg");
                     /// Edit model.cfg
-                    string text2 = File.ReadAllText("/SimObjects/Airplanes/*/model.main/.model.cfg");
+                    string text2 = File.ReadAllText(lvrdir + "/SimObjects/Airplanes/*/model.main/.model.cfg");
                     string replace2 = text2.Replace("exterior = .. / .. / Asobo_A320_NEO / model / A320_NEO.xml", "exterior=../../FlyByWire_A320_NEO/model/A320_NEO.xml");
                     File.WriteAllText("output file", replace2);
 
-                    string text3 = File.ReadAllText("/SimObjects/Airplanes/*/model.main/.model.cfg");
-                    string replace3 = text2.Replace("exterior = .. / .. / Asobo_A320_NEO / model / A320_NEO.xml", "exterior=../../FlyByWire_A320_NEO/model/A320_NEO.xml");
-                    File.WriteAllText("output file", replace3);
+                    string text3 = File.ReadAllText(lvrdir + "/SimObjects/Airplanes/*/model.main/.model.cfg");
+                    string replace3 = text2.Replace("exterior = .. \\ .. \\ Asobo_A320_NEO \\ model \\ A320_NEO.xml", "exterior=../../FlyByWire_A320_NEO/model/A320_NEO.xml");
+                    File.WriteAllText(lvrdir + "/SimObjects/Airplanes/*/model.main/model.cfg", replace3);
                 }
                 else
                 {
                     MessageBox.Show("The aircraft.cfg file of the selected livery couldn't be found. Please read the documentations.", "Exception: Livery file missing",
                         MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
-            }
 
+                /// EFE
+                if (File.Exists(lvrdir + "/SimObjects/Airplanes/*/model.main/model.cfg"))
+                {
+                    /// Backup model.cfg
+                    System.IO.File.Move(lvrdir + "/SimObjects/Airplanes/*/model.main/model.cfg", lvrdir + "/SimObjects/Airplanes/*/model.main/model.cfg");
+                    /// Edit model.cfg
+                    string text4 = File.ReadAllText("/SimObjects/Airplanes/*/model.main/.model.cfg");
+                    string replace4 = text4.Replace("interior = .. / .. / Asobo_A320_NEO / model / A320_NEO_interior.xml", "exterior=../../FlyByWire_A320_NEO/model/A320_NEO_Interior.xml");
+                    File.WriteAllText(lvrdir + "/SimObjects/Airplanes/*/model.main/model.cfg", replace4);
+
+                    string text5 = File.ReadAllText("/SimObjects/Airplanes/*/model.main/.model.cfg");
+                    string replace5 = text5.Replace("interior = .. \\ .. \\ Asobo_A320_NEO \\ model \\ A320_NEO_interior.xml", "inter=../../FlyByWire_A320_NEO/model/A320_NEO_Interior.xml");
+                    File.WriteAllText(lvrdir + "/SimObjects/Airplanes/*/model.main/model.cfg", replace5);
+                }
+                else
+                {
+                    MessageBox.Show("The model.cfg file of the selected livery couldn't be found. Please read the documentations.", "Exception: Livery file missing",
+                        MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+
+            }
         }
     }
 }
@@ -84,8 +108,12 @@ namespace LiveryConverter
 
 for Replacing strings:
 
-string text = File.ReadAllText("input file");
-replace = text.Replace("what to replace", "with replace");
-File.WriteAllText("output file", replace);
+string textx = File.ReadAllText("input file");
+replacex = textx.Replace("what to replace", "with replace");
+File.WriteAllText("output file", replacex);
+
+
 
 */
+
+

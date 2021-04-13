@@ -9,6 +9,9 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Microsoft.WindowsAPICodePack.Dialogs;
 
+
+///  lvrdir
+
 namespace LiveryConverter
 {
     public partial class Form1 : Form
@@ -35,7 +38,7 @@ namespace LiveryConverter
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            Worker.Conversion();
         }
 
         private void label1_Click(object sender, EventArgs e)

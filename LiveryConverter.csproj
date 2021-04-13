@@ -112,8 +112,5 @@
   <ItemGroup>
     <None Include="Resources\diesdas1.jpg" />
   </ItemGroup>
-  <ItemGroup>
-    <Content Include="Windows Logo.png" />
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
