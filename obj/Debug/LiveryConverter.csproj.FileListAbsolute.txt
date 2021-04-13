@@ -19,3 +19,14 @@ A:\Programmieren\FBWLiveryConverter\obj\Debug\LiveryConverter.Properties.Resourc
 A:\Programmieren\FBWLiveryConverter\obj\Debug\LiveryConverter.csproj.GenerateResource.cache
 A:\Programmieren\FBWLiveryConverter\obj\Debug\LiveryConverter.csproj.CoreCompileInputs.cache
 A:\Programmieren\FBWLiveryConverter\obj\Debug\LiveryConverter.pdb
+A:\Programmieren\FBWLiveryConverter\bin\Debug\LiveryConverter.exe.config
+A:\Programmieren\FBWLiveryConverter\bin\Debug\LiveryConverter.exe
+A:\Programmieren\FBWLiveryConverter\bin\Debug\LiveryConverter.pdb
+A:\Programmieren\FBWLiveryConverter\bin\Debug\Microsoft.WindowsAPICodePack.dll
+A:\Programmieren\FBWLiveryConverter\bin\Debug\Microsoft.WindowsAPICodePack.ExtendedLinguisticServices.dll
+A:\Programmieren\FBWLiveryConverter\bin\Debug\Microsoft.WindowsAPICodePack.Sensors.dll
+A:\Programmieren\FBWLiveryConverter\bin\Debug\Microsoft.WindowsAPICodePack.Shell.dll
+A:\Programmieren\FBWLiveryConverter\bin\Debug\Microsoft.WindowsAPICodePack.ShellExtensions.dll
+A:\Programmieren\FBWLiveryConverter\bin\Debug\Microsoft.WindowsAPICodePack.Shell.xml
+A:\Programmieren\FBWLiveryConverter\obj\Debug\LiveryConverter.csproj.CopyComplete
+A:\Programmieren\FBWLiveryConverter\obj\Debug\LiveryConverter.exe
