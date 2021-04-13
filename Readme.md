@@ -14,8 +14,8 @@ One of the latest FBW updates made the A32nx independent from the default A320, 
 
 ## Future plans
  
- - [x] UI $(Designed by [Skyline](https://github.com/wunderkekshd/ "His GitHub") with help of [Henrik](https://github.com/henriklmao/ "My GitHub")$)
- - [ ] Load Backup button $(Backups are already made.$)
+ - [x] UI (Designed by [Skyline](https://github.com/wunderkekshd/ "His GitHub") with help of [Henrik](https://github.com/henriklmao/ "My GitHub"))
+ - [ ] Load Backup button (Backups are already made.)
  - [ ] Drag and drop support for the livery selection
  - [ ] Convert Multiple liveries at once
 
