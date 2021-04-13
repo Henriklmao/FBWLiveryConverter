@@ -31,16 +31,19 @@ namespace LiveryConverter
         [STAThread]
         public void button2_Click(object sender, EventArgs e)
         {
+            //test
             CommonOpenFileDialog dialog = new CommonOpenFileDialog();
             dialog.IsFolderPicker = true;
             if (dialog.ShowDialog() == CommonFileDialogResult.Ok)
             {
 
-
+                textBox1.Text = dialog.FileName;
                 lvrdir = (dialog.FileName);
+                Worker.Conversion(dialog.FileName);
+                /*
                 MessageBox.Show(lvrdir+" _|_", "Your comupter has virus",
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
-
+                */
                 ///Worker.Conversion();
 
                 ///textBox1.Text = dialog.FileName; 
