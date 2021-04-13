@@ -48,7 +48,6 @@ namespace LiveryConverter
             this.button1.TabIndex = 0;
             this.button1.Text = "Convert";
             this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -80,7 +79,6 @@ namespace LiveryConverter
             this.label1.Size = new System.Drawing.Size(356, 40);
             this.label1.TabIndex = 3;
             this.label1.Text = "Select your livery-folder.";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 

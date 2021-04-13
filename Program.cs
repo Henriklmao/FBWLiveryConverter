@@ -28,6 +28,7 @@ namespace LiveryConverter
 
     static class Worker
     {
+        static string lvrdir;
         public static void Conversion()
         {
             if (File.Exists(lvrdir + "manifest.json"))
