@@ -39,15 +39,16 @@ namespace LiveryConverter
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.LightGreen;
-            this.button1.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.Black;
+            this.button1.BackColor = System.Drawing.Color.DimGray;
+            this.button1.Font = new System.Drawing.Font("Reem Kufi", 21.75F);
+            this.button1.ForeColor = System.Drawing.SystemColors.Menu;
             this.button1.Location = new System.Drawing.Point(178, 236);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(181, 85);
             this.button1.TabIndex = 0;
             this.button1.Text = "Convert";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
