@@ -21,21 +21,15 @@ namespace LiveryConverter
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
         }
-
-        internal static void Conversion()
-        {
-            throw new NotImplementedException();
-        }
     }
 
-    public static class Worker
+    public static class Arbeiter
     {
       
         public static void Conversion(string lvrdir)
         {
             if (File.Exists(lvrdir + "manifest.json"))
             {
-
             }
             else
             {
@@ -44,7 +38,6 @@ namespace LiveryConverter
                 Application.Restart();
                 Environment.Exit(0);
             }
-            {
                 if (File.Exists(lvrdir + "SimObjects/Airplanes/*/aircraft.cfg"))
                 {
                     /// Backup aircraft.cfg
@@ -82,7 +75,6 @@ namespace LiveryConverter
                         MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
 
-                /// EFE
                 if (File.Exists(lvrdir + "SimObjects/Airplanes/*/model.main/model.cfg"))
                 {
                     /// Backup model.cfg
@@ -101,11 +93,10 @@ namespace LiveryConverter
                     MessageBox.Show("The model.cfg file of the selected livery couldn't be found. Please read the documentations.", "Exception: Livery file missing",
                         MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
-
             }
-        }
-    }
-}
+         }
+     }
+          
 
 
 

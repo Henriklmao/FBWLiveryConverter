@@ -39,11 +39,8 @@ namespace LiveryConverter
 
                 textBox1.Text = dialog.FileName;
                 lvrdir = (dialog.FileName);
-                Worker.Conversion(dialog.FileName);
-                /*
                 MessageBox.Show(lvrdir+" _|_", "Your comupter has virus",
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
-                */
                 ///Worker.Conversion();
 
                 ///textBox1.Text = dialog.FileName; 
@@ -53,7 +50,7 @@ namespace LiveryConverter
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Worker.Conversion();
+            Arbeiter.Conversion(lvrdir);
         }
 
         private void button3_Click(object sender, EventArgs e)

@@ -16,12 +16,7 @@ C:\Users\onere\source\repos\Henriklmao\FBWLiveryConverter\obj\Debug\LiveryConver
 A:\Programmieren\FBWLiveryConverter\bin\Debug\LiveryConverter.exe.config
 A:\Programmieren\FBWLiveryConverter\bin\Debug\LiveryConverter.exe
 A:\Programmieren\FBWLiveryConverter\bin\Debug\LiveryConverter.pdb
-A:\Programmieren\FBWLiveryConverter\bin\Debug\Microsoft.WindowsAPICodePack.dll
-A:\Programmieren\FBWLiveryConverter\bin\Debug\Microsoft.WindowsAPICodePack.Shell.dll
 A:\Programmieren\FBWLiveryConverter\bin\Debug\Microsoft.WindowsAPICodePack.ShellExtensions.dll
-A:\Programmieren\FBWLiveryConverter\bin\Debug\Microsoft.WindowsAPICodePack.pdb
-A:\Programmieren\FBWLiveryConverter\bin\Debug\Microsoft.WindowsAPICodePack.xml
-A:\Programmieren\FBWLiveryConverter\bin\Debug\Microsoft.WindowsAPICodePack.Shell.pdb
 A:\Programmieren\FBWLiveryConverter\bin\Debug\Microsoft.WindowsAPICodePack.Shell.xml
 A:\Programmieren\FBWLiveryConverter\bin\Debug\Microsoft.WindowsAPICodePack.ShellExtensions.pdb
 A:\Programmieren\FBWLiveryConverter\bin\Debug\Microsoft.WindowsAPICodePack.ShellExtensions.xml
@@ -66,3 +61,6 @@ C:\Users\onere\Documents\GitHub\FBWLiveryConverter\obj\Debug\LiveryConverter.csp
 C:\Users\onere\Documents\GitHub\FBWLiveryConverter\obj\Debug\LiveryConverter.csproj.CopyComplete
 C:\Users\onere\Documents\GitHub\FBWLiveryConverter\obj\Debug\LiveryConverter.exe
 C:\Users\onere\Documents\GitHub\FBWLiveryConverter\obj\Debug\LiveryConverter.pdb
+A:\Programmieren\FBWLiveryConverter\bin\Debug\Microsoft.WindowsAPICodePack.dll
+A:\Programmieren\FBWLiveryConverter\bin\Debug\Microsoft.WindowsAPICodePack.Shell.dll
+A:\Programmieren\FBWLiveryConverter\bin\Debug\Microsoft.WindowsAPICodePack.xml
