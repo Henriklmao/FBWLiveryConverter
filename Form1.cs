@@ -11,13 +11,13 @@ using System.Windows.Forms;
 using Microsoft.WindowsAPICodePack.Dialogs;
 
 
-///  lvrdir
+///  seldir
 
 namespace LiveryConverter
 {
     public partial class Form1 : Form
     {
-        public string lvrdir;
+        public string seldir;
         public Form1()
         {
             InitializeComponent();
@@ -38,9 +38,9 @@ namespace LiveryConverter
             {
 
                 textBox1.Text = dialog.FileName;
-                lvrdir = (dialog.FileName);
-                MessageBox.Show(lvrdir+" _|_", "Your comupter has virus",
-                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+                seldir = (dialog.FileName);  
+               /// MessageBox.Show(seldir+" _|_", "Your comupter has virus",
+                   /// MessageBoxButtons.OK, MessageBoxIcon.Error);
                 ///Worker.Conversion();
 
                 ///textBox1.Text = dialog.FileName; 
@@ -50,7 +50,16 @@ namespace LiveryConverter
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Arbeiter.Conversion(lvrdir);
+            if (File.Exists(seldir + "/manifest.json"))
+            {
+                Arbeiter.Conversion(seldir);
+            }
+            else
+            {
+                MessageBox.Show("The Livery you've selected seems invalid. Please read the documentations on how to select the livery the right way.", "Error: Invalid Livery",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+                Restart.RestartProgram();
+            }
         }
 
         private void button3_Click(object sender, EventArgs e)
