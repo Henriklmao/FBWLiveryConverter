@@ -35,6 +35,8 @@ namespace LiveryConverter
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.backupbtn = new System.Windows.Forms.Button();
+            this.qmbtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button1
@@ -42,7 +44,7 @@ namespace LiveryConverter
             this.button1.BackColor = System.Drawing.Color.DimGray;
             this.button1.Font = new System.Drawing.Font("Reem Kufi", 21.75F);
             this.button1.ForeColor = System.Drawing.SystemColors.Menu;
-            this.button1.Location = new System.Drawing.Point(178, 236);
+            this.button1.Location = new System.Drawing.Point(164, 236);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(181, 85);
             this.button1.TabIndex = 0;
@@ -93,6 +95,33 @@ namespace LiveryConverter
             this.label2.TabIndex = 4;
             this.label2.Text = "LiveryConverter v.0.1";
             // 
+            // backupbtn
+            // 
+            this.backupbtn.BackColor = System.Drawing.Color.Khaki;
+            this.backupbtn.Font = new System.Drawing.Font("Reem Kufi", 14.25F);
+            this.backupbtn.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.backupbtn.Location = new System.Drawing.Point(411, 277);
+            this.backupbtn.Name = "backupbtn";
+            this.backupbtn.Size = new System.Drawing.Size(102, 44);
+            this.backupbtn.TabIndex = 5;
+            this.backupbtn.Text = "Rollback";
+            this.backupbtn.UseVisualStyleBackColor = false;
+            this.backupbtn.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // qmbtn
+            // 
+            this.qmbtn.AutoSize = true;
+            this.qmbtn.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.qmbtn.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.qmbtn.FlatAppearance.BorderSize = 0;
+            this.qmbtn.Image = global::LiveryConverter.Properties.Resources.iconnnn;
+            this.qmbtn.Location = new System.Drawing.Point(12, 284);
+            this.qmbtn.Name = "qmbtn";
+            this.qmbtn.Size = new System.Drawing.Size(49, 49);
+            this.qmbtn.TabIndex = 6;
+            this.qmbtn.UseVisualStyleBackColor = false;
+            this.qmbtn.Click += new System.EventHandler(this.qmbtn_click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -100,6 +129,8 @@ namespace LiveryConverter
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.BackgroundImage = global::LiveryConverter.Properties.Resources.diesdas1;
             this.ClientSize = new System.Drawing.Size(540, 345);
+            this.Controls.Add(this.qmbtn);
+            this.Controls.Add(this.backupbtn);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox1);
@@ -122,6 +153,8 @@ namespace LiveryConverter
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button backupbtn;
+        private System.Windows.Forms.Button qmbtn;
     }
 }
 

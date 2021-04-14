@@ -28,10 +28,10 @@ namespace LiveryConverter
         }
     }
 
-    static class Worker
+    public static class Worker
     {
-        static string lvrdir;
-        public static void Conversion()
+      
+        public static void Conversion(string lvrdir)
         {
             if (File.Exists(lvrdir + "manifest.json"))
             {
@@ -41,6 +41,8 @@ namespace LiveryConverter
             {
                 MessageBox.Show("The Livery you've selected seems invalid. Please read the documentations.", "Error: Invalid Livery",
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
+                Application.Restart();
+                Environment.Exit(0);
             }
             {
                 if (File.Exists(lvrdir + "SimObjects/Airplanes/*/aircraft.cfg"))

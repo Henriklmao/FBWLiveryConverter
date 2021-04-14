@@ -31,36 +31,37 @@ namespace LiveryConverter
         [STAThread]
         public void button2_Click(object sender, EventArgs e)
         {
-            using (var fbd = new FolderBrowserDialog())
-            {
-                DialogResult result = fbd.ShowDialog();
-
-                if (result == DialogResult.OK && !string.IsNullOrWhiteSpace(fbd.SelectedPath))
-                {
-                    string[] files = Directory.GetFiles(fbd.SelectedPath);
-
-                    System.Windows.Forms.MessageBox.Show("Files found: " + files.Length.ToString(), "Message");
-                }
-            }
-            /*
+            //test
             CommonOpenFileDialog dialog = new CommonOpenFileDialog();
             dialog.IsFolderPicker = true;
             if (dialog.ShowDialog() == CommonFileDialogResult.Ok)
             {
 
-
+                textBox1.Text = dialog.FileName;
                 lvrdir = (dialog.FileName);
+                Worker.Conversion(dialog.FileName);
+                /*
                 MessageBox.Show(lvrdir+" _|_", "Your comupter has virus",
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
-
+                */
                 ///Worker.Conversion();
 
                 ///textBox1.Text = dialog.FileName; 
             }
-            */
+
         }
 
         private void button1_Click(object sender, EventArgs e)
+        {
+            Worker.Conversion();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void qmbtn_click(object sender, EventArgs e)
         {
 
         }
