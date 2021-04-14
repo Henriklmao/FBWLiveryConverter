@@ -52,7 +52,7 @@ namespace LiveryConverter
         {
             if (File.Exists(seldir + "/manifest.json"))
             {
-                Arbeiter.Conversion(seldir);
+                Worker.Conversion(seldir);
             }
             else
             {

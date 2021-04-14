@@ -1,0 +1,17 @@
+A:\Programmieren\FBWLiveryConverter\bin\Release\LiveryConverter.exe.config
+A:\Programmieren\FBWLiveryConverter\bin\Release\LiveryConverter.exe
+A:\Programmieren\FBWLiveryConverter\bin\Release\LiveryConverter.pdb
+A:\Programmieren\FBWLiveryConverter\bin\Release\Microsoft.WindowsAPICodePack.dll
+A:\Programmieren\FBWLiveryConverter\bin\Release\Microsoft.WindowsAPICodePack.Shell.dll
+A:\Programmieren\FBWLiveryConverter\bin\Release\Microsoft.WindowsAPICodePack.ShellExtensions.dll
+A:\Programmieren\FBWLiveryConverter\bin\Release\Microsoft.WindowsAPICodePack.xml
+A:\Programmieren\FBWLiveryConverter\bin\Release\Microsoft.WindowsAPICodePack.Shell.xml
+A:\Programmieren\FBWLiveryConverter\bin\Release\Microsoft.WindowsAPICodePack.ShellExtensions.pdb
+A:\Programmieren\FBWLiveryConverter\bin\Release\Microsoft.WindowsAPICodePack.ShellExtensions.xml
+A:\Programmieren\FBWLiveryConverter\obj\Release\LiveryConverter.Form1.resources
+A:\Programmieren\FBWLiveryConverter\obj\Release\LiveryConverter.Properties.Resources.resources
+A:\Programmieren\FBWLiveryConverter\obj\Release\LiveryConverter.csproj.GenerateResource.cache
+A:\Programmieren\FBWLiveryConverter\obj\Release\LiveryConverter.csproj.CoreCompileInputs.cache
+A:\Programmieren\FBWLiveryConverter\obj\Release\LiveryConverter.csproj.CopyComplete
+A:\Programmieren\FBWLiveryConverter\obj\Release\LiveryConverter.exe
+A:\Programmieren\FBWLiveryConverter\obj\Release\LiveryConverter.pdb
