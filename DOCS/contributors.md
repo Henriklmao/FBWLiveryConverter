@@ -17,4 +17,4 @@ GitHub: [wunderkekshd](https://github.com/wunderkekshd/)
 
 ## Contributors
 
-Sadly no one yet.
+Fabain - He helped with some errors we had.
