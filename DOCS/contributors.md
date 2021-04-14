@@ -16,5 +16,5 @@ Discord: skyline#5696
 GitHub: [wunderkekshd](https://github.com/wunderkekshd/)
 
 ## Contributors
-
-Fabain - He helped with some errors we had.
+### Thank you:
+[Fabian](https://github.com/Fabian-internet) - For helping us with some errors we had with the WindowsAPICodePack that broke many times as of now.
