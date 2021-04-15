@@ -39,11 +39,6 @@ namespace LiveryConverter
 
                 textBox1.Text = dialog.FileName;
                 seldir = (dialog.FileName);  
-               /// MessageBox.Show(seldir+" _|_", "Your comupter has virus",
-                   /// MessageBoxButtons.OK, MessageBoxIcon.Error);
-                ///Worker.Conversion();
-
-                ///textBox1.Text = dialog.FileName; 
             }
 
         }

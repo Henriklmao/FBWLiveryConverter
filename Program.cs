@@ -57,9 +57,9 @@ namespace LiveryConverter
                 /// Backup model.cfg
                 System.IO.File.Move(lvrdir + @"\..\model.main\model.cfg", lvrdir + @"\..\model.main\.model.cfg");
                 /// Edit model.cfg
-                string text2 = File.ReadAllText(lvrdir + @"\..\.aircraft.cfg");
+                string text2 = File.ReadAllText(lvrdir + @"\..\model.main\.model.cfg");
                 string replace2 = text2.Replace("Asobo_A320_NEO", "FlyByWire_A320_NEO");
-                File.WriteAllText(lvrdir + @"\..\aircraft.cfg", replace2);
+                File.WriteAllText(lvrdir + @"\..\model.main\model.cfg", replace2);
             }
             else
             {
