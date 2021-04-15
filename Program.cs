@@ -92,7 +92,7 @@ namespace LiveryConverter
             File.WriteAllLines(txtrcfg, stdtxtr);
 
         MessageBox.Show("Conversion Finished", "Task failed sucessfull.",
-                        MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        MessageBoxButtons.OK, MessageBoxIcon.Information);
                     Restart.RestartProgram();
             }
          }
