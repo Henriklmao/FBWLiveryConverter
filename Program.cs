@@ -61,7 +61,7 @@ namespace LiveryConverter
             }
             else
             {
-                MessageBox.Show("The aircraft.cfg file of the selected livery couldn't be found. Please read the documentations.", "Exception: Livery file missing",
+                MessageBox.Show("The model.cfg file of the selected livery couldn't be found. Please read the documentations.", "Exception: Livery file missing",
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
                 Restart.RestartProgram();
             }

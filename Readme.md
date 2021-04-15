@@ -19,8 +19,8 @@ The other programs for that are batch (.bat or .cmd) files, sometimes even packe
  
  - [x] UI (Designed by [Skyline](https://github.com/wunderkekshd/ "His GitHub") with help of [Henrik](https://github.com/henriklmao/ "My GitHub"))
  - [ ] Load Backup button (Backups are already made.)
- - [ ] Drag and drop support for the livery selection
- - [ ] Convert Multiple liveries at once
+ - [ ] Drag and drop support for the livery selection.
+ - [ ] Convert every livery.
 
 
 ## Credits
