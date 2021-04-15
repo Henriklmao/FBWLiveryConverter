@@ -8,6 +8,7 @@ A:\Programmieren\FBWLiveryConverter\bin\Release\Microsoft.WindowsAPICodePack.xml
 A:\Programmieren\FBWLiveryConverter\bin\Release\Microsoft.WindowsAPICodePack.Shell.xml
 A:\Programmieren\FBWLiveryConverter\bin\Release\Microsoft.WindowsAPICodePack.ShellExtensions.pdb
 A:\Programmieren\FBWLiveryConverter\bin\Release\Microsoft.WindowsAPICodePack.ShellExtensions.xml
+A:\Programmieren\FBWLiveryConverter\obj\Release\LiveryConverter.csprojAssemblyReference.cache
 A:\Programmieren\FBWLiveryConverter\obj\Release\LiveryConverter.Form1.resources
 A:\Programmieren\FBWLiveryConverter\obj\Release\LiveryConverter.Properties.Resources.resources
 A:\Programmieren\FBWLiveryConverter\obj\Release\LiveryConverter.csproj.GenerateResource.cache
@@ -15,3 +16,5 @@ A:\Programmieren\FBWLiveryConverter\obj\Release\LiveryConverter.csproj.CoreCompi
 A:\Programmieren\FBWLiveryConverter\obj\Release\LiveryConverter.csproj.CopyComplete
 A:\Programmieren\FBWLiveryConverter\obj\Release\LiveryConverter.exe
 A:\Programmieren\FBWLiveryConverter\obj\Release\LiveryConverter.pdb
+A:\Programmieren\FBWLiveryConverter\bin\Release\Microsoft.WindowsAPICodePack.pdb
+A:\Programmieren\FBWLiveryConverter\bin\Release\Microsoft.WindowsAPICodePack.Shell.pdb

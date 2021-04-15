@@ -106,7 +106,7 @@ namespace LiveryConverter
             this.backupbtn.TabIndex = 5;
             this.backupbtn.Text = "Rollback";
             this.backupbtn.UseVisualStyleBackColor = false;
-            this.backupbtn.Click += new System.EventHandler(this.button3_Click);
+            this.backupbtn.Click += new System.EventHandler(this.Rollback_Click);
             // 
             // qmbtn
             // 

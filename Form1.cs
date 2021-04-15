@@ -25,7 +25,7 @@ namespace LiveryConverter
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            ///.
+            backupbtn.Visible = false;
         }
 
         [STAThread]
@@ -38,7 +38,12 @@ namespace LiveryConverter
             {
 
                 textBox1.Text = dialog.FileName;
-                seldir = (dialog.FileName);  
+                seldir = (dialog.FileName);
+                if (File.Exists(seldir + "\\.LiveryConverter"))
+                {
+                    backupbtn.Visible = true;
+                    button1.Visible = false;
+                }
             }
 
         }
@@ -52,19 +57,19 @@ namespace LiveryConverter
             else
             {
                 MessageBox.Show("The Livery you've selected seems invalid. Please read the documentations on how to select the livery the right way.", "Error: Invalid Livery",
-                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBoxButtons.OK, MessageBoxIcon.Information);
                 Restart.RestartProgram();
             }
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void Rollback_Click(object sender, EventArgs e)
         {
-
+            Worker.Rollback(seldir);
         }
 
         private void qmbtn_click(object sender, EventArgs e)
         {
-
+            System.Diagnostics.Process.Start("https://github.com/Henriklmao/FBWLiveryConverter/blob/main/DOCS/Docs.md");
         }
     }
 }

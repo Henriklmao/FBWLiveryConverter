@@ -2,7 +2,8 @@
 
 ### How does it check if a livery is valid or not.
 It is checking if there's a manifest.json in the directory of the livery.
-> if (File.Exists(lvrdir + "/manifest.json")) <
+> if (File.Exists(lvrdir + "/manifest.json"))
+
 This seems quite primitive, but it protects the user from selecting the wrong directory (i.e. the directory of the livery inside of the Simobjects\Airplanes%\ folder).
 
 ### How does it convert the livery to be compatible with the A32nx mod?
