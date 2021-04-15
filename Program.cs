@@ -30,38 +30,40 @@ namespace LiveryConverter
         {
 
             string[] lvrarr = Directory.GetFiles(seldir + "\\SimObjects\\Airplanes\\", "aircraft.cfg", SearchOption.AllDirectories); /// Searching for x name in Simobjects/Airplanes/x/
-            string lvrdir = lvrarr[0];
+            string lvrdir = lvrarr[0]; /// The Livery Directory is always saved with the \aircraft.cfg at the end, so we have to always go back down there.
             if (File.Exists(lvrdir + @"\..\aircraft.cfg"))
             {
                 /// Backup aircraft.cfg
                 System.IO.File.Move(lvrdir + @"\..\aircraft.cfg", lvrdir + @"\..\.aircraft.cfg");
                 /// Edit aircraft.cfg
-                string text1 = File.ReadAllText(lvrdir + @"\..\.aircraft.cfg");
-                string replace1 = text1.Replace("Asobo_A320_NEO", "FlyByWire_A320_NEO");
-                File.WriteAllText(lvrdir + @"\..\aircraft.cfg", replace1);
+
+                string text2 = File.ReadAllText(lvrdir + @"\..\.aircraft.cfg");
+                string replace2 = text2.Replace("base_container = \"..\\Asobo_A320_NEO\"", "base_container = \"..\\FlyByWire_A320_NEO\"");
+                File.WriteAllText(lvrdir, replace2);
+
+                string text1 = File.ReadAllText(lvrdir);
+                string replace1 = text1.Replace("base_container = \"../Asobo_A320_NEO\"", "base_container = \"..\\FlyByWire_A320_NEO\"");
+                File.WriteAllText(lvrdir, replace1);
             }
             else
             {
-                MessageBox.Show("The aircraft.cfg file of the selected livery couldn't be found. Please read the documentations.", "Exception: Livery file missing",
+                MessageBox.Show("The aircraft.cfg file of the selected livery couldn't be found. Please read the documentations.", "Exception: Livery file missing or corrupted",
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
                 Restart.RestartProgram();
             }
+
             if (File.Exists(lvrdir + @"\..\model.main\model.cfg"))
             {
                 /// Backup model.cfg
                 System.IO.File.Move(lvrdir + @"\..\model.main\model.cfg", lvrdir + @"\..\model.main\.model.cfg");
                 /// Edit model.cfg
-                string text2 = File.ReadAllText(lvrdir + @"\..\model.main\.model.cfg");
-                string replace2 = text2.Replace("exterior=../../Asobo_A320_NEO/model/A320_NEO.xml", "exterior=../../FlyByWire_A320_NEO/model/A320_NEO.xml");
-                File.WriteAllText(lvrdir + @"\..\model.main\model.cfg", replace2);
-
-                string text3 = File.ReadAllText(lvrdir + @"\..\model.main\model.cfg");
-                string replace3 = text2.Replace("exterior=..\\..\\Asobo_A320_NEO\\model\\A320_NEO.xml", "exterior=../../FlyByWire_A320_NEO/model/A320_NEO.xml");
-                File.WriteAllText(lvrdir + @"\..\model.main\model.cfg", replace3);
+                string text2 = File.ReadAllText(lvrdir + @"\..\.aircraft.cfg");
+                string replace2 = text2.Replace("Asobo_A320_NEO", "FlyByWire_A320_NEO");
+                File.WriteAllText(lvrdir + @"\..\aircraft.cfg", replace2);
             }
             else
             {
-                MessageBox.Show("The model.cfg file of the selected livery couldn't be found. Please read the documentations.", "Exception: Livery file missing",
+                MessageBox.Show("The aircraft.cfg file of the selected livery couldn't be found. Please read the documentations.", "Exception: Livery file missing",
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
                 Restart.RestartProgram();
             }
