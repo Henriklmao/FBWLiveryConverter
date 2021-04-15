@@ -37,9 +37,9 @@ namespace LiveryConverter
                 System.IO.File.Move(lvrdir + @"\..\aircraft.cfg", lvrdir + @"\..\.aircraft.cfg");
                 /// Edit aircraft.cfg
 
-                string text2 = File.ReadAllText(lvrdir + @"\..\.aircraft.cfg");
-                string replace2 = text2.Replace("base_container = \"..\\Asobo_A320_NEO\"", "base_container = \"..\\FlyByWire_A320_NEO\"");
-                File.WriteAllText(lvrdir, replace2);
+                string text0 = File.ReadAllText(lvrdir + @"\..\.aircraft.cfg");
+                string replace0 = text0.Replace("base_container = \"..\\Asobo_A320_NEO\"", "base_container = \"..\\FlyByWire_A320_NEO\"");
+                File.WriteAllText(lvrdir, replace0);
 
                 string text1 = File.ReadAllText(lvrdir);
                 string replace1 = text1.Replace("base_container = \"../Asobo_A320_NEO\"", "base_container = \"..\\FlyByWire_A320_NEO\"");
