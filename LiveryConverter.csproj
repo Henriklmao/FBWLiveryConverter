@@ -140,5 +140,17 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\convert.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rollback.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backgroundforprogram.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\selectyour.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

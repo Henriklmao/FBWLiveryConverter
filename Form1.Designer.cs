@@ -33,22 +33,25 @@ namespace LiveryConverter
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.backupbtn = new System.Windows.Forms.Button();
             this.qmbtn = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.DimGray;
+            this.button1.BackColor = System.Drawing.Color.Transparent;
+            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
+            this.button1.FlatAppearance.BorderSize = 0;
             this.button1.Font = new System.Drawing.Font("Reem Kufi", 21.75F);
-            this.button1.ForeColor = System.Drawing.SystemColors.Menu;
+            this.button1.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.button1.Image = global::LiveryConverter.Properties.Resources.convert;
             this.button1.Location = new System.Drawing.Point(164, 236);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(181, 85);
             this.button1.TabIndex = 0;
-            this.button1.Text = "Convert";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -71,40 +74,29 @@ namespace LiveryConverter
             this.textBox1.Size = new System.Drawing.Size(316, 24);
             this.textBox1.TabIndex = 2;
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label1.Location = new System.Drawing.Point(88, 82);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(356, 40);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "Select your livery-folder.";
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Ebrima", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.label2.Location = new System.Drawing.Point(12, 9);
+            this.label2.Location = new System.Drawing.Point(485, 73);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(158, 20);
+            this.label2.Size = new System.Drawing.Size(43, 20);
             this.label2.TabIndex = 4;
-            this.label2.Text = "LiveryConverter v.0.1";
+            this.label2.Text = "v.1.0";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // backupbtn
             // 
-            this.backupbtn.BackColor = System.Drawing.Color.Khaki;
+            this.backupbtn.BackColor = System.Drawing.Color.Transparent;
             this.backupbtn.Font = new System.Drawing.Font("Reem Kufi", 14.25F);
             this.backupbtn.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.backupbtn.Image = global::LiveryConverter.Properties.Resources.rollback;
             this.backupbtn.Location = new System.Drawing.Point(411, 277);
             this.backupbtn.Name = "backupbtn";
             this.backupbtn.Size = new System.Drawing.Size(102, 44);
             this.backupbtn.TabIndex = 5;
-            this.backupbtn.Text = "Rollback";
             this.backupbtn.UseVisualStyleBackColor = false;
             this.backupbtn.Click += new System.EventHandler(this.Rollback_Click);
             // 
@@ -122,17 +114,27 @@ namespace LiveryConverter
             this.qmbtn.UseVisualStyleBackColor = false;
             this.qmbtn.Click += new System.EventHandler(this.qmbtn_click);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.DimGray;
+            this.pictureBox1.Image = global::LiveryConverter.Properties.Resources.selectyour;
+            this.pictureBox1.Location = new System.Drawing.Point(95, 118);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(364, 50);
+            this.pictureBox1.TabIndex = 7;
+            this.pictureBox1.TabStop = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.BackgroundImage = global::LiveryConverter.Properties.Resources.diesdas1;
+            this.BackgroundImage = global::LiveryConverter.Properties.Resources.backgroundforprogram;
             this.ClientSize = new System.Drawing.Size(540, 345);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.qmbtn);
             this.Controls.Add(this.backupbtn);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
@@ -141,6 +143,7 @@ namespace LiveryConverter
             this.Name = "Form1";
             this.Text = "LiveryConverter";
             this.Load += new System.EventHandler(this.Form1_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -151,10 +154,10 @@ namespace LiveryConverter
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button backupbtn;
         private System.Windows.Forms.Button qmbtn;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 

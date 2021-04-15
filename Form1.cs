@@ -71,5 +71,10 @@ namespace LiveryConverter
         {
             System.Diagnostics.Process.Start("https://github.com/Henriklmao/FBWLiveryConverter/blob/main/DOCS/Docs.md");
         }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
